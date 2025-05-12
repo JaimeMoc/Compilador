@@ -22,3 +22,73 @@ analizadorlexico (Nombre del proyecto )/
 ├── AnalizadorSintactico.java# Verifica estructura de la expresión.
 
 ├── AnalizadorSemantico.java # Evalúa la semántica y realiza el cálculo.
+
+
+---
+
+## 🔤 Análisis Léxico
+
+El léxico convierte la entrada en una lista de **tokens**, que pueden ser:
+- `NUMERO`: Secuencias numéricas (e.g., `10`, `42`)
+- `OPERADOR`: Operadores válidos `+`, `-`, `*`, `/`
+
+---
+
+## 🔁 Análisis Sintáctico
+
+Verifica la **estructura de la expresión**:
+- Debe comenzar con un número.
+- Se alternan `NUMERO` y `OPERADOR`.
+- No puede terminar en un operador.
+
+📌 *Ejemplo válido:* `4 + 5 - 2`  
+🚫 *Ejemplo inválido:* `+ 5 5` o `4 +`
+
+---
+
+## 📐 Análisis Semántico
+
+Aplica **reglas de sentido lógico**:
+- ✅ Los operandos deben ser números.
+- ❌ No se permite dividir entre cero.
+- Evalúa la expresión solo si no hay errores semánticos.
+
+---
+
+## ⚙️ Ejecución
+
+1. Clona el repositorio o copia los archivos a tu IDE Java.
+2. Ejecuta `Pruebas.java`.
+3. Ingresa una expresión cuando se te solicite.
+4. Verás:
+   - Lista de tokens detectados
+   - Validación sintáctica
+   - Verificación semántica
+   - Resultado final
+
+---
+
+## 📌 Requisitos
+
+- Java JDK 8 o superior
+- IDE como Eclipse, IntelliJ o compilador en línea
+
+---
+
+## 👤 Autor
+
+**Jaime Alberto Suárez Moctezuma**  
+Lenguajes y Autómatas II — Instituto Tecnológico de Tuxtla Gutiérrez
+
+---
+
+## 📚 Créditos Académicos
+
+Este proyecto fue desarrollado como parte del curso de **Lenguajes y Autómatas II**, con el fin de comprender de forma práctica las etapas de la construcción de un compilador simple.
+
+---
+
+## 📝 Licencia
+
+Este código es de uso académico y educativo.
+
